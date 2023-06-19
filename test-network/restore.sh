@@ -10,7 +10,8 @@ mv ${COMPOSE_FILE_BASE} ${COMPOSE_FILE_BASE}.bak
 cp ${COMPOSE_FILE_BASE_RESTORE} ${COMPOSE_FILE_BASE}
 
 #Bringing network Up with Previous Backup
-docker-compose -f ${COMPOSE_FILE_BASE}  up -d
+#docker-compose -f ${COMPOSE_FILE_BASE}  up -d
+./network.sh up
 
 #All done...
 exit 1
